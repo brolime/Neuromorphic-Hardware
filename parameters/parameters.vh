@@ -42,7 +42,7 @@ localparam PRECISION = (1+INTEGER_PRECISION+DECIMAL_PRECISION),
 //hardware: <hidden-layer-1><hidden-layer-2><hidden-layer-3>...<output-layer>
 //important note: the input layer neurons are implemented in software/testbench
 parameter INPUT_NEURONS = 256,	//swctrl
-parameter HIDDEN_LAYERS = 1,	//swctrl
+parameter HIDDEN_LAYERS = 2,	//swctrl
 parameter HIDDEN_LAYER_NEURONS = 256,	//swctrl
 parameter OUTPUT_NEURONS = 10,	//swctrl
 localparam HARDWARE_LAYERS = (HIDDEN_LAYERS + 1),

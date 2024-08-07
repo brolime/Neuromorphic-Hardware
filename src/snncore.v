@@ -106,7 +106,7 @@ module snncore #(
 		.DECIMAL_PRECISION(DECIMAL_PRECISION),
 		.ADDR_WIDTH_NEURON(NEURON_ENC_BITS),
 		.ADDR_WIDTH_FANIN(FANIN_ENC_BITS)
-	) layer_0(
+	) layer_input(
 		.rst(rst),
 		.memclk(memclk),
 		.spkclk(spkclk),
@@ -136,7 +136,7 @@ module snncore #(
 			.DECIMAL_PRECISION(DECIMAL_PRECISION),
 			.ADDR_WIDTH_NEURON(NEURON_ENC_BITS),
 			.ADDR_WIDTH_FANIN(FANIN_ENC_BITS)
-		) layer(
+		) hidden_layer(
 			.rst(rst),
 			.memclk(memclk),
 			.spkclk(spkclk),
@@ -165,7 +165,7 @@ module snncore #(
 		.DECIMAL_PRECISION(DECIMAL_PRECISION),
 		.ADDR_WIDTH_NEURON(NEURON_ENC_BITS),
 		.ADDR_WIDTH_FANIN(FANIN_ENC_BITS)
-	) layer_out(
+	) layer_output(
 		.rst(rst),
 		.memclk(memclk),
 		.spkclk(spkclk),
